@@ -5,23 +5,25 @@
 ### Installation project - Backend
 
 - install Node.js
-- install XAMPP 8.2, jika sudah ada jalankan XAMPP Control Panel
-- start Apache dan MySQL
-- extract folder dari zip
-- run vscode dan buka folder yang sudah di extract dari zip
-- buka terminal, lalu arahkan direktori ke folder backend `cd backend`
+- install XAMPP 8.2. If you already have one, run XAMPP Control Panel
+- start Apache and MySQL
+- extract folder from zip
+- run vscode and open the folder that has been extracted from the zip
+- open a terminal, then navigate to the folder backend `cd backend`
 - add node modules `npm install`
 - create db `npx sequelize db:create`
 - migrate table `npx sequelize db:migrate`
 - `npm run start` or `npm run start-dev` (using nodemon)
-- open Postman dan import Postman Collection dari folder postman-collection
-- untuk mengetes API dari Postman dapat dilihat dari hasil impor tersebut
+- open Postman and import Postman Collection from folder postman-collection
+- to test API from Postman, can be seen from the import results
 
 ### Installation project - Frontend
 
-- buka terminal baru dari vscode yang sudah di buka
-- arahkan direktori ke folder backend `cd frontend`
+- open new terminal from vscode which has been opened
+- navigate directory to folder backend `cd frontend`
 - add node modules `npm install`
-- jalankan `npm run start`
+- run react app `npm run start`
 
-### Note: Harus dijalankan keduanya di terminal dan jangan lupa menjalankan XAMPP. Ada baiknya melakukan instalasi sesuai dengan panduan diatas dan jalankan backend nya terlebih dahulu baru frontendnya 
+### Note: Must run both in terminal and dont forget to run XAMPP. It's a good idea to carry out the installation according to the guide above and run the backend first and then the frontend
+
+Thanks
