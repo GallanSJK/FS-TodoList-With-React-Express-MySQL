@@ -45,6 +45,16 @@ const App = () => {
             console.log(err)
         });
     }
+
+    const deleteTodo = async(id) => {
+        await axios.delete("http://localhost:8080/api/todo/" + id)
+        .then(res => {
+            console.log(res.data.message)
+            getData()
+        }).catch(err => {
+            console.log(err)
+        });
+    }
     
     return (
         <div className='container'>
@@ -55,7 +65,7 @@ const App = () => {
                         onChange={(e) => setName(e.target.value)} 
                         value={name}
                     />
-                    <button>Submit</button>
+                    <button>Add</button>
                 </form>
                 {data.map((item, i) => (
                     <div key={i} className='list'>
@@ -66,7 +76,7 @@ const App = () => {
                                 setIdEdit(item.id)
                                 setStatusEdit(!item.status)
                             }} readOnly/>
-                            <button>
+                            <button onClick={() => deleteTodo(item.id)}>
                                 Delete
                             </button>
                         </div>
