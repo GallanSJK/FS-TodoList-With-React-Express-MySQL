@@ -20,6 +20,8 @@
 ### Installation project - Frontend
 
 - buka terminal baru dari vscode yang sudah di buka
-- arahkan direktori ke folder backend `cd backend`
+- arahkan direktori ke folder backend `cd frontend`
 - add node modules `npm install`
 - jalankan `npm run start`
+
+### Note: Harus dijalankan keduanya di terminal dan jangan lupa menjalankan XAMPP. Ada baiknya melakukan instalasi sesuai dengan panduan diatas dan jalankan backend nya terlebih dahulu baru frontendnya 
